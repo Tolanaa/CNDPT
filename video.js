@@ -8,7 +8,7 @@ const VIDEO_CONFIG = {
   src: 'assets/video/82203b0e4de64a24a1b0695fcce90fba.mp4',
   type: 'video/mp4',
   poster: 'assets/bellionaire-hero.png',
-  captions: '',
+  captions: 'assets/video/phu-de-vi-v4.vtt',
   captionsLabel: 'Tiếng Việt'
 };
 
@@ -29,6 +29,7 @@ if (video && videoShell) {
     track.label = VIDEO_CONFIG.captionsLabel;
     track.srclang = 'vi';
     track.src = VIDEO_CONFIG.captions;
+    track.default = true;
     video.append(track);
   }
 
